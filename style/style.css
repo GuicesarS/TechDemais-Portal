@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+}
+.bi-cart-check-fill{
+    margin-left:3%;
+    font-size:1.5rem;
+    color:blue;
+}
+header{
+    margin-bottom:5%;
+}
+#div-pesquisa{
+    width:100%;
+    justify-content: end;
+    margin-top:-7%!important;
+
+}
+.box-pesquisa01, .box-pesquisa02 {
+    width:35%!important;
+}
+.container-pesquisa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.filtropesquisa{
+    background-image: linear-gradient(to left,rgb(0, 3, 15), black)!important;
+}
+footer{
+    padding-top:2%;
+}
+.menulateral {
+    width: 40vh!important;
+    background-color: #f2f2f2;
+    padding: 20px;
+    float: right;
+  }
+  
+  .menulateral h4 {
+    margin-top: 0;
+  }
+  
+  .menulateral p {
+    margin-bottom: 0;
+  }
+  
+  .menulateral strong {
+    color: #ff0000;
+  }
+.mainContainer{
+    display:flex;
+    flex-direction: row;
+}
+  
+@media screen and (max-width: 900px) {
+    #div-pesquisa{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center!important;
+        margin-top:0px!important;
+    
+    }
+    .box-pesquisa01, .box-pesquisa02{
+        width:100%!important;
+        
+    }
+    #carrinho , #logoLoja{
+        display:none!important;
+    }
+    .mainContainer{
+        display:flex;
+        flex-direction: column;
+    }
+    .filtropesquisa{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        justify-content: center;
+    }
+    .pesquisa{
+        width: 100%;
+    }
+    .pesquisa01{
+        display: flex;
+        flex-direction: column;
+    }.esticarpesquisa{
+        width: 100% !important;
+    }
+    .Divcarousel{
+        width: 100% !important;
+    }
+    .carrinho{
+        display: none;
+    }
+    .menulateral {
+        width: 100%!important;
+      }
+
+  }

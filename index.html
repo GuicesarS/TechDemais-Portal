@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto portal</title>
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+
+</head>
+<header>
+    <div class=" inicio container-fluid"> 
+        <div class="row">
+            <div class="col-sm-4 col-md-2 text-center"  >
+                <img src="/img/LOGO.jpg" class="img-fluid" height="100px" alt="Logo da loja">
+            </div>
+            <!--titulo logo-->
+            <div class="col-sm-8 col-md-4 text-center mt-2" id="logoLoja">
+                <h1><strong>TechDemais</strong></h1>
+            </div>
+            <!--menu-->
+            <div class="col-sm-12 col-md-6 ">
+                <ul class="nav justify-content-md-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Registrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Minha Conta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ajuda</a>
+                    </li>
+                    <li>
+                        <i class="bi bi-cart-check-fill" id="carrinho"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row " id="div-pesquisa">
+            <!--pesquisa-->
+            <div class="col-sm-7 col-md-5 d-flex align-items-center box-pesquisa01"> <!-- Ajuste na coluna da navbar -->
+                <nav class=" navbar bg-body-tertiary"> 
+                    <div class="container-fluid container-pesquisa">
+                        <a class="navbar-brand p-3">O que Deseja?</a>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                            <button type="button" class="btn btn-outline-primary">Buscar</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-sm-12 col-md-6 text-center box-pesquisa02">
+                <p>Os melhores produtos do Mercado</p>
+                <p>Suporte 24 horas | Contato: (31) 991253590</p>
+            </div>
+            <div></div>
+        </div>
+    </div>
+</header>
+<body>
+    <main>
+        <!-- formulario -->
+        <div class="container-fluid filtropesquisa ">
+            <div class="row pesquisa01">
+                <div class=" col-3 esticarpesquisa">
+
+                    <p class="text-center text-light pt-2">Filtro de Pesquisa</p>
+
+                    <select class="form-select mb-2 form-select-sm" aria-label="Default select example">
+                        <option selected>Produtos</option>
+                        <option value="1">Periféricos</option>
+                        <option value="2">Teclado Gamer</option>
+                        <option value="3">Mouse Gamer</option>
+                        <option value="4">Acessórios</option>
+                        <option value="5">Todos</option>
+                    </select>
+                    <!-- pode ter outra select caso necessario  -->
+
+                    <select class="form-select mb-2 form-select-sm" aria-label="Default select example">
+                        <option selected>Valores</option>
+                        <option value="1"> R$ 100 até R$ 500</option>
+                        <option value="2">R$ 600 até R$ 1000</option>
+                        <option value="3">R$ 5000 + </option>
+                    </select> 
+
+                    <button type="button" class="btn btn-outline-primary btn-sm mb-3">Filtrar</button>
+
+                </div>
+
+                <div class="Divcarousel col-9"> 
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/img/1.png" class="img-fluid"  alt="Slide01">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/img/2.png" class="img-fluid"  alt="slide02">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+         </div>
+
+    <!-- cards -->
+         <div class="mainContainer">
+            <div class="container">
+                <div class="row gy-3 my-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card" >
+                            <img src="img/monitor.jpg" class="card-img-top" alt="Monitor Sansung">
+                            <div class="card-body">
+                            <h5 class="card-title">Monitor Sansung</h5>
+                            <p class="card-text">Monitor LED 24" widescreen Curvo C24F390F Samsung CX  </p>
+                            <h4>R$ 1.086,00</h4>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card" >
+                            <img src="img/impressora.webp" class="card-img-top" alt="Impressora Multifuncional Deskjet">
+                            <div class="card-body">
+                            <h5 class="card-title">Impressora Deskjet</h5>
+                            <p class="card-text"> Ink Advantage 2774 7FR22A, Colorida, Wi-fi, Conexão USB, Bivolt - HP CX 1 UN</p>
+                            <h4>R$ 449,99</h4>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card" >
+                            <img src="img/hyperx_alloy_origins_core_no_1_top_down_900x.webp" class="card-img-top" alt="Teclado Gamer Hyperx">
+                            <div class="card-body">
+                            <h5 class="card-title">Teclado Gamer Hyperx</h5>
+                            <p class="card-text">Teclado Mecânico Gamer HyperX Alloy Origins Core, RGB - HX-KB7RDX-BR</p>
+                            <h4>R$ 479,90</h4>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card" >
+                            <img src="img/pcgamer.jpg" class="card-img-top" alt="Pc Gamer ">
+                            <div class="card-body">
+                            <h5 class="card-title">Pc Gamer Pichau</h5>
+                            <p class="card-text">INTEL I9-13900K, GEFORCE RTX 4070 TI 12GB, 32GB DDR5, SSD M.2 1TB</p>
+                            <h4>R$ 11.789,00</h4>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="img/HyperX-Cloud-Alpha-Pro-Gaming-Headset.jpg" class="card-img-top" alt="Headset Hyperx">
+                            <div class="card-body">
+                            <h5 class="card-title">Headset Hyperx</h5>
+                            <p class="card-text">Headset Gamer HyperX Cloud II,Multi-plataformas</p>
+                            <h4>R$ 499,99</h4>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card" >
+                            <img src="img/cadeiraGamerBranca.jpg" class="card-img-top" alt="Cadeira Gamer">
+                            <div class="card-body">
+                            <h5 class="card-title">Cadeira Gamer</h5>
+                            <p class="card-text">Cadeira Gamer Mad Racer V8 Branca MADV8BCGL PCYES</p>
+                            <h4>R$ 789,90</h4>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card" >
+                            <img src="img/placadeVideo.jpg" class="card-img-top" alt="placadeVideo">
+                            <div class="card-body">
+                            <h5 class="card-title">Placa de Video</h5>
+                            <p class="card-text">PCYES GeForce GTX 1050 Dual, 2GB GDDR5</p>
+                            <h4>R$ 1199,99</h4>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card" >
+                            <img src="img/mousegamer.webp" class="card-img-top" alt="Mouse Gamer USB">
+                            <div class="card-body">
+                            <h5 class="card-title">Mouse Gamer USB</h5>
+                            <p class="card-text">Mouse Gamer Ivor 3200DPI Preto Warrior - MO261</p>
+                            <h4>R$ 69,90</h4>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+       
+          
+        <!-- menu lateral -->
+
+            <div class="menulateral col-3 mt-3">
+                <div class="row">
+                    <p><h4>Mais Vendidos</h4></p>
+                    <div class="col-3 border-bottom border-danger">
+                        <img src="/img/carregadorPortatil.webp" class="img-fluid" alt="carregador Portatil">
+                    </div>
+                    <div class="col-9 border-bottom border-danger">
+                        <p>Carregador Portátil Power Bank Pineng </p>
+                        <strong>R$ 99,90</strong>
+                    </div>
+
+                    <div class="col-3 border-bottom border-danger mt-3">
+                        <img src="/img/smartwatch.jpg"  class="img-fluid" alt="smartwatch">
+                    </div>
+                    <div class="col-9 border-bottom border-danger mt-3">
+                        <p>Smartwatch IP67 44mm My Watch I Fit HZ-ZL02D (PRETO)</p>
+                        <strong>R$ 150,00</strong>
+                    </div>
+
+                    <div class="col-3 border-bottom border-danger mt-3">
+                        <img src="img/airpods-pro.webp" class="img-fluid" alt="Airpods pro">
+                    </div>
+                    <div class="col-9 border-bottom border-danger mt-3">
+                        <p>Apple Airpods Pro</p>
+                        <strong>R$ 350,00</strong>
+                    </div>
+                    <div class="col-3 border-bottom border-danger mt-3">
+                        <img src="/img/intelCore-I5.jpg" class="img-fluid" alt="Processador Intel Core i5-10400F">
+                    </div>
+                    <div class="col-9 border-bottom border-danger mt-3">
+                        <p>Processador Intel Core i5-10400F, 2.9GHz (4.3GHz Max Turbo), Cache 12MB, 6 Núcleos, 12 Threads</p>
+                        <strong>R$ 600,00</strong>
+                    </div>
+                    <div class="col-3 border-bottom border-danger mt-3">
+                        <img src="/img/jblfone.webp" class="img-fluid" alt="Fone De Ouvido Bluetooth Jbl ">
+                    </div>
+                    <div class="col-9 border-bottom border-danger mt-3">
+                        <p>Fone De Ouvido Bluetooth Jbl Tune 710bt</p>
+                        <strong>R$ 355,00</strong>
+                    </div>
+                    <div class="col-3 border-bottom border-danger mt-3">
+                        <img src="img/suportenotebook.webp" class="img-fluid" alt="Suporte para Notebook ">
+                    </div>
+                    <div class="col-9 border-bottom border-danger mt-3">
+                        <p>Suporte Ergonômico Regulável para Notebook - Preto</p>
+                        <strong>R$ 29,90</strong>
+                    </div>
+
+                    <div class="row mt-3 bg-dark rounded" id="formLateral" >
+                        <div class="col">
+                            <p class="text-center text-light">Cadastre-se em nossa newsletter</p>
+                            <form action="">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <button type="submit" class="btn btn-outline-success my-2">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div> 
+         </div>
+    </main>
+    <footer class="bg-dark text-light mt-5 ">
+                <div class="container-fluid">
+                    <div class="row">
+                            <div class="col-sm-4 col-12 text-center">
+                                <p class="fs-5">Métodos de Pagamento</p>
+                                <p><i class="fs-4 bi bi-credit-card-fill"></i></p>
+                                <p><i class="fs-4 bi bi-paypal"></i></p>
+                            </div>
+                
+                            <div class="col-sm-4 col-12 text-center">
+                                <p class="fs-5">Redes Sociais</p>
+                                <p><i class="bi bi-instagram"></i> TechDemais</p>
+                                <p><i class="bi bi-twitter"></i> _TechDemais</p>
+                            </div>
+                
+                            <div class="col-sm-4 col-12 text-center">
+                                <p class="fs-5">Contatos</p>
+                                <p><i class="bi bi-envelope-at"></i> TechDemais@gmail.com</p>
+                                <p><i class="bi bi-whatsapp"></i> (31)991253590</p>
+                            </div>
+                    </div>
+                            <div class="row mt-3">
+                                <div class="col text-center">
+                                    <p>© 2023 Tech Demais. Todos os direitos reservados</p>
+                                </div>
+                            </div>
+                </div>
+          </footer>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
